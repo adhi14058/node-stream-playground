@@ -1,13 +1,8 @@
-const express = require("express");
-const fs = require("fs");
-const path = require("path");
-let {
-	doSomethingWithStream,
-	getPath,
-	wait,
-	getStats,
-	print,
-} = require("./utils");
+import express from "express";
+import { createWriteStream } from "fs";
+import path from "path";
+import { doSomethingWithStream, getPath, wait, getStats, print } from "./utils";
+
 const app = express();
 let middlewareNumber = 0;
 
@@ -27,7 +22,7 @@ app.use(async (req, res, next) => {
 	// await doSomethingWithStream(stream);
 	// stream.resume();
 
-	let writeStream = fs.createWriteStream(getPath(`${mNum}`));
+	let writeStream = createWriteStream(getPath(`${mNum}`));
 	stream.pipe(writeStream);
 	next();
 });
@@ -39,7 +34,7 @@ app.use((req, res, next) => {
 	let stream = req.stream || req;
 	stream.on("data", (data) => print(mNum, data));
 
-	let writeStream = fs.createWriteStream(getPath(`${mNum}`));
+	let writeStream = createWriteStream(getPath(`${mNum}`));
 	stream.pipe(writeStream);
 	next();
 });
@@ -51,7 +46,7 @@ app.use((req, res, next) => {
 	let stream = req.stream || req;
 	stream.on("data", (data) => print(mNum, data));
 
-	let writeStream3 = fs.createWriteStream(getPath(`${mNum}`));
+	let writeStream3 = createWriteStream(getPath(`${mNum}`));
 	stream.pipe(writeStream3);
 	next();
 });

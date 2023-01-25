@@ -1,10 +1,11 @@
-const fs = require("fs");
-const path = require("path");
-let publicFolderPath = path.resolve(__dirname, "public");
+import { createWriteStream, readdirSync, statSync, unlink } from "fs";
+import { resolve } from "path";
+
+let publicFolderPath = resolve(__dirname, "public");
 
 function doSomethingWithStream(stream) {
 	return new Promise((res, rej) => {
-		let writeStream1a = fs.createWriteStream(getPath("doSomethingWithStream"));
+		let writeStream1a = createWriteStream(getPath("doSomethingWithStream"));
 		stream.pipe(writeStream1a);
 		writeStream1a.on("close", () => {
 			res();
@@ -12,11 +13,7 @@ function doSomethingWithStream(stream) {
 	});
 }
 function getPath(middlewareNumber) {
-	return path.resolve(
-		__dirname,
-		"public",
-		`middleware-${middlewareNumber}.txt`
-	);
+	return resolve(__dirname, "public", `middleware-${middlewareNumber}.txt`);
 }
 
 function wait(ms) {
@@ -24,12 +21,12 @@ function wait(ms) {
 }
 
 function getStats() {
-	let publicFolder = fs.readdirSync(publicFolderPath);
+	let publicFolder = readdirSync(publicFolderPath);
 	let result = {};
 	for (let fileName of publicFolder) {
-		let filePath = path.resolve(publicFolderPath, fileName);
-		result[fileName] = fs.statSync(filePath).size;
-		if (fileName !== "fileTobeUploaded.txt") fs.unlink(filePath, () => {});
+		let filePath = resolve(publicFolderPath, fileName);
+		result[fileName] = statSync(filePath).size;
+		if (fileName !== "fileTobeUploaded.txt") unlink(filePath, () => {});
 	}
 	return result;
 }
@@ -37,7 +34,7 @@ function getStats() {
 function print(middlewareNumber, data) {
 	console.log(`\nmiddleware-${middlewareNumber}`, data ? data : "");
 }
-module.exports = {
+export default {
 	doSomethingWithStream,
 	getPath,
 	wait,
