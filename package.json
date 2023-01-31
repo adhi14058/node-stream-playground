@@ -6,7 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "node index.js"
+		"start": "nodemon server.js"
 	},
 	"author": "",
 	"license": "ISC",
@@ -18,7 +18,10 @@
 		"express-http-context": "^1.2.4",
 		"lodash": "^4.17.21",
 		"moment": "^2.29.1",
-		"nodemon": "^2.0.15",
+		"tick-id": "^1.0.2",
 		"uuid": "^8.3.2"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.20"
 	}
 }

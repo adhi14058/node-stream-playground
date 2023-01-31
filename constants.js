@@ -8,6 +8,7 @@ export const dataFolder = path.resolve(__dirname, "data");
 export const dataReadFolder = path.resolve(__dirname, "data", "read");
 export const dataWriteFolder = path.resolve(__dirname, "data", "write");
 
+export const kb100path = path.resolve(__dirname, "data", "read", "100kb.txt");
 export const mb1path = path.resolve(__dirname, "data", "read", "1mb.txt");
 export const mb120path = path.resolve(__dirname, "data", "read", "120mb.txt");
 export const mb800path = path.resolve(__dirname, "data", "read", "800mb.txt");
