@@ -1,7 +1,7 @@
 // import "./modules/playground/writeStream.js";
-// import "./modules/playground/customWritableStream.js";
+import "./modules/playground/customWritableStream.js";
 // import "./modules/playground/writeStreamPlayground.js";
-import "./module/playground/readStream.js";
+// import "./module/playground/readStream.js";
 
 // object mode
 // readable in read streams;

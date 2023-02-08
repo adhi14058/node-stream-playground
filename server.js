@@ -6,8 +6,16 @@ const app = express();
 
 app.use(async (req, res, next) => {
 	console.log("middleare1 pre: ", tickId());
-	await wait(1000);
+	// await wait(1000);
 	console.log("middleare1: ", tickId());
+	next();
+});
+
+app.use(async (req, res, next) => {
+	res.once("finish", async () => {
+		await wait(2000);
+		console.log("hihi");
+	});
 	next();
 });
 

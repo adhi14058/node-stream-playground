@@ -1,11 +1,10 @@
 import fs from "fs";
 import path from "path";
-import { logTime } from "../utils/wrappers/timer.js";
-import { memoryWrapper } from "../utils/wrappers/memory.js";
-import { dataWriteFolder } from "../constants.js";
+import { logTime } from "../../../utils/wrappers/timer.js";
+import { memoryWrapper } from "../../../utils/wrappers/memory.js";
+import { dataWriteFolder } from "../../../constants.js";
 
 export function dumpData(filename = "test.txt", max = 200 * 1024) {
-	//15 * 1000 * 1000
 	return new Promise((resolve, reject) => {
 		const destinationPath = path.resolve(dataWriteFolder, filename);
 		const writeStream = fs.createWriteStream(destinationPath);

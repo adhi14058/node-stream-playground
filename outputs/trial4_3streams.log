@@ -1,0 +1,107 @@
+
+tranform              : 1000ms T                     1 -  <Buffer 31 20 32 20 33 20 34 20 35 20>
+chunk recieved _write : 1000ms Wr                    1 -  <Buffer 31 20 32 20 33 20 34 20 35 20>
+tranform              : 2000ms T                     1 -  <Buffer 31 20 32 20 33 20 34 20 35 20>
+chunk recieved _write : 2000ms Wr                    1 -  <Buffer 31 20 32 20 33 20 34 20 35 20>
+tranform              : 3000ms T                     1 -  <Buffer 31 20 32 20 33 20 34 20 35 20>
+chunk recieved _write : 3000ms Wr                    1 -  <Buffer 31 20 32 20 33 20 34 20 35 20>
+tranform              : 1000ms T                     2 -  <Buffer 36 39 37 20 32 33 36 39 38 20>
+tranform              : 2000ms T                     2 -  <Buffer 36 39 37 20 32 33 36 39 38 20>
+tranform              : 3000ms T                     2 -  <Buffer 36 39 37 20 32 33 36 39 38 20>
+calling callback      : 1000ms Cb                    1 -  <Buffer 31 20 32 20 33 20 34 20 35 20>
+tranform              : 1000ms T                     3 -  <Buffer 32 20 34 35 35 34 33 20 34 35>
+chunk recieved _write : 1000ms Wr                    2 -  <Buffer 36 39 37 20 32 33 36 39 38 20>
+calling callback      : 2000ms Cb                    1 -  <Buffer 31 20 32 20 33 20 34 20 35 20>
+tranform              : 2000ms T                     3 -  <Buffer 32 20 34 35 35 34 33 20 34 35>
+chunk recieved _write : 2000ms Wr                    2 -  <Buffer 36 39 37 20 32 33 36 39 38 20>
+calling callback      : 1000ms Cb                    2 -  <Buffer 36 39 37 20 32 33 36 39 38 20>
+chunk recieved _write : 1000ms Wr                    3 -  <Buffer 32 20 34 35 35 34 33 20 34 35>
+calling callback      : 3000ms Cb                    1 -  <Buffer 31 20 32 20 33 20 34 20 35 20>
+tranform              : 3000ms T                     3 -  <Buffer 32 20 34 35 35 34 33 20 34 35>
+tranform              : 1000ms T                     4 -  <Buffer 36 37 33 38 38 20 36 37 33 38>
+chunk recieved _write : 3000ms Wr                    2 -  <Buffer 36 39 37 20 32 33 36 39 38 20>
+calling callback      : 1000ms Cb                    3 -  <Buffer 32 20 34 35 35 34 33 20 34 35>
+chunk recieved _write : 1000ms Wr                    4 -  <Buffer 36 37 33 38 38 20 36 37 33 38>
+calling callback      : 2000ms Cb                    2 -  <Buffer 36 39 37 20 32 33 36 39 38 20>
+tranform              : 2000ms T                     4 -  <Buffer 36 37 33 38 38 20 36 37 33 38>
+chunk recieved _write : 2000ms Wr                    3 -  <Buffer 32 20 34 35 35 34 33 20 34 35>
+calling callback      : 1000ms Cb                    4 -  <Buffer 36 37 33 38 38 20 36 37 33 38>
+calling callback      : 3000ms Cb                    2 -  <Buffer 36 39 37 20 32 33 36 39 38 20>
+tranform              : 3000ms T                     4 -  <Buffer 36 37 33 38 38 20 36 37 33 38>
+tranform              : 1000ms T                     5 -  <Buffer 32 33 33 20 38 39 32 33 34 20>
+chunk recieved _write : 1000ms Wr                    5 -  <Buffer 32 33 33 20 38 39 32 33 34 20>
+chunk recieved _write : 3000ms Wr                    3 -  <Buffer 32 20 34 35 35 34 33 20 34 35>
+calling callback      : 2000ms Cb                    3 -  <Buffer 32 20 34 35 35 34 33 20 34 35>
+tranform              : 2000ms T                     5 -  <Buffer 32 33 33 20 38 39 32 33 34 20>
+chunk recieved _write : 2000ms Wr                    4 -  <Buffer 36 37 33 38 38 20 36 37 33 38>
+calling callback      : 1000ms Cb                    5 -  <Buffer 32 33 33 20 38 39 32 33 34 20>
+calling callback      : 2000ms Cb                    4 -  <Buffer 36 37 33 38 38 20 36 37 33 38>
+chunk recieved _write : 2000ms Wr                    5 -  <Buffer 32 33 33 20 38 39 32 33 34 20>
+calling callback      : 3000ms Cb                    3 -  <Buffer 32 20 34 35 35 34 33 20 34 35>
+tranform              : 3000ms T                     5 -  <Buffer 32 33 33 20 38 39 32 33 34 20>
+tranform              : 1000ms T                     6 -  <Buffer 31 30 39 34 39 36 20 31 30 39>
+chunk recieved _write : 1000ms Wr                    6 -  <Buffer 31 30 39 34 39 36 20 31 30 39>
+tranform              : 2000ms T                     6 -  <Buffer 31 30 39 34 39 36 20 31 30 39>
+chunk recieved _write : 3000ms Wr                    4 -  <Buffer 36 37 33 38 38 20 36 37 33 38>
+calling callback      : 2000ms Cb                    5 -  <Buffer 32 33 33 20 38 39 32 33 34 20>
+chunk recieved _write : 2000ms Wr                    6 -  <Buffer 31 30 39 34 39 36 20 31 30 39>
+calling callback      : 1000ms Cb                    6 -  <Buffer 31 30 39 34 39 36 20 31 30 39>
+calling callback      : 3000ms Cb                    4 -  <Buffer 36 37 33 38 38 20 36 37 33 38>
+tranform              : 3000ms T                     6 -  <Buffer 31 30 39 34 39 36 20 31 30 39>
+tranform              : 1000ms T                     7 -  <Buffer 32 30 20 31 32 38 32 32 31 20>
+chunk recieved _write : 1000ms Wr                    7 -  <Buffer 32 30 20 31 32 38 32 32 31 20>
+tranform              : 2000ms T                     7 -  <Buffer 32 30 20 31 32 38 32 32 31 20>
+chunk recieved _write : 3000ms Wr                    5 -  <Buffer 32 33 33 20 38 39 32 33 34 20>
+calling callback      : 2000ms Cb                    6 -  <Buffer 31 30 39 34 39 36 20 31 30 39>
+chunk recieved _write : 2000ms Wr                    7 -  <Buffer 32 30 20 31 32 38 32 32 31 20>
+calling callback      : 1000ms Cb                    7 -  <Buffer 32 30 20 31 32 38 32 32 31 20>
+calling callback      : 2000ms Cb                    7 -  <Buffer 32 30 20 31 32 38 32 32 31 20>
+calling callback      : 3000ms Cb                    5 -  <Buffer 32 33 33 20 38 39 32 33 34 20>
+tranform              : 3000ms T                     7 -  <Buffer 32 30 20 31 32 38 32 32 31 20>
+tranform              : 1000ms T                     8 -  <Buffer 34 36 39 34 35 20 31 34 36 39>
+chunk recieved _write : 1000ms Wr                    8 -  <Buffer 34 36 39 34 35 20 31 34 36 39>
+tranform              : 2000ms T                     8 -  <Buffer 34 36 39 34 35 20 31 34 36 39>
+chunk recieved _write : 2000ms Wr                    8 -  <Buffer 34 36 39 34 35 20 31 34 36 39>
+chunk recieved _write : 3000ms Wr                    6 -  <Buffer 31 30 39 34 39 36 20 31 30 39>
+calling callback      : 1000ms Cb                    8 -  <Buffer 34 36 39 34 35 20 31 34 36 39>
+calling callback      : 2000ms Cb                    8 -  <Buffer 34 36 39 34 35 20 31 34 36 39>
+calling callback      : 3000ms Cb                    6 -  <Buffer 31 30 39 34 39 36 20 31 30 39>
+tranform              : 3000ms T                     8 -  <Buffer 34 36 39 34 35 20 31 34 36 39>
+tranform              : 1000ms T                     9 -  <Buffer 39 20 31 36 35 36 37 30 20 31>
+chunk recieved _write : 1000ms Wr                    9 -  <Buffer 39 20 31 36 35 36 37 30 20 31>
+tranform              : 2000ms T                     9 -  <Buffer 39 20 31 36 35 36 37 30 20 31>
+chunk recieved _write : 2000ms Wr                    9 -  <Buffer 39 20 31 36 35 36 37 30 20 31>
+chunk recieved _write : 3000ms Wr                    7 -  <Buffer 32 30 20 31 32 38 32 32 31 20>
+calling callback      : 1000ms Cb                    9 -  <Buffer 39 20 31 36 35 36 37 30 20 31>
+calling callback      : 2000ms Cb                    9 -  <Buffer 39 20 31 36 35 36 37 30 20 31>
+calling callback      : 3000ms Cb                    7 -  <Buffer 32 30 20 31 32 38 32 32 31 20>
+tranform              : 3000ms T                     9 -  <Buffer 39 20 31 36 35 36 37 30 20 31>
+tranform              : 1000ms T                     10 - <Buffer 34 33 39 34 20 31 38 34 33 39>
+chunk recieved _write : 1000ms Wr                    10 - <Buffer 34 33 39 34 20 31 38 34 33 39>
+tranform              : 2000ms T                     10 - <Buffer 34 33 39 34 20 31 38 34 33 39>
+chunk recieved _write : 2000ms Wr                    10 - <Buffer 34 33 39 34 20 31 38 34 33 39>
+chunk recieved _write : 3000ms Wr                    8 -  <Buffer 34 36 39 34 35 20 31 34 36 39>
+calling callback      : 1000ms Cb                    10 - <Buffer 34 33 39 34 20 31 38 34 33 39>
+calling callback      : 2000ms Cb                    10 - <Buffer 34 33 39 34 20 31 38 34 33 39>
+calling callback      : 3000ms Cb                    8 -  <Buffer 34 36 39 34 35 20 31 34 36 39>
+tranform              : 3000ms T                     10 - <Buffer 34 33 39 34 20 31 38 34 33 39>
+tranform              : 1000ms T                     11 - <Buffer 20 32 30 33 31 31 39 20 32 30>
+chunk recieved _write : 1000ms Wr                    11 - <Buffer 20 32 30 33 31 31 39 20 32 30>
+tranform              : 2000ms T                     11 - <Buffer 20 32 30 33 31 31 39 20 32 30>
+chunk recieved _write : 2000ms Wr                    11 - <Buffer 20 32 30 33 31 31 39 20 32 30>
+chunk recieved _write : 3000ms Wr                    9 -  <Buffer 39 20 31 36 35 36 37 30 20 31>
+calling callback      : 1000ms Cb                    11 - <Buffer 20 32 30 33 31 31 39 20 32 30>
+1000ms-delay.txt 1322488 / 1322488         
+done         
+calling callback      : 2000ms Cb                    11 - <Buffer 20 32 30 33 31 31 39 20 32 30>
+2000ms-delay.txt 1322488 / 1322488         
+done         
+calling callback      : 3000ms Cb                    9 -  <Buffer 39 20 31 36 35 36 37 30 20 31>
+tranform              : 3000ms T                     11 - <Buffer 20 32 30 33 31 31 39 20 32 30>
+chunk recieved _write : 3000ms Wr                    10 - <Buffer 34 33 39 34 20 31 38 34 33 39>
+calling callback      : 3000ms Cb                    10 - <Buffer 34 33 39 34 20 31 38 34 33 39>
+chunk recieved _write : 3000ms Wr                    11 - <Buffer 20 32 30 33 31 31 39 20 32 30>
+calling callback      : 3000ms Cb                    11 - <Buffer 20 32 30 33 31 31 39 20 32 30>
+3000ms-delay.txt 1322488 / 1322488
+done
+
